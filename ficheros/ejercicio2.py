@@ -2,7 +2,7 @@
 archivo=open("ejercicio.txt","r+")
 print(archivo.read())
 #obtenemos los datos del fichero
-
+#no cambiar ruta del txt
 print(archivo.name)
 print(archivo.mode)
 print(archivo.encoding)
