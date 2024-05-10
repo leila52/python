@@ -12,6 +12,8 @@ la suma de  4.0  y  5.0  =  9.0
 los argumentos son  ['argumentos.py', '4', 'p']
 los argumentos tienen que ser númericos
 [luis@localhost excepciones]$
+
+lo que se pone en la terminal es pthon3 ejercicio1 5 6
 """
 import sys
 
