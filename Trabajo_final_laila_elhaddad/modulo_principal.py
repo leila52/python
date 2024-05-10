@@ -1,5 +1,5 @@
-from .contacto import Contacto
-from .lista_enlazada import ListaEnlazada
+from contacto import *
+from lista_enlazada import *
 
 def intro_datos_contacto():
     nombre = input("Introduce el nombre del contacto: ")
