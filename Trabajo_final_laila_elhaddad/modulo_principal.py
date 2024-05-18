@@ -1,5 +1,6 @@
 from contacto import *
 from lista_enlazada import *
+import pickle
 
 def intro_datos_contacto():
     nombre = input("Introduce el nombre del contacto: ")
@@ -57,8 +58,8 @@ def editar(lista):
                 contacto.email = nuevo_email
 
 def menu(lista):
-    print("AGENDA DE CONTACTOS")
-    print("Elige una opción (1, 2, 3, 4, 5 o 6) del siguiente menú de contactos:")
+    print("agenda de contactos de leila")
+    print("Elige una opción del siguiente menú de contactos:")
     print("1. Añadir un nuevo contacto")
     print("2. Eliminar un contacto")
     print("3. Consultar un contacto")
@@ -66,7 +67,7 @@ def menu(lista):
     print("5. Listar la agenda")
     print("6. Salir")
 
-    opcion = input("Introduce la opción y pulsa enter: ")
+    opcion = input("Introduce una opcción: ")
 
     if opcion == "1":
         anadir(lista)
