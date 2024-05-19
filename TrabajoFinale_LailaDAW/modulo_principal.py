@@ -94,6 +94,15 @@ def menu(lista):
     else:
         print("Opción no válida.")
 
+def guardar_agenda(lista):
+    try:
+        with open("agenda.datos", "wb") as archivo:
+            pickle.dump(lista, archivo)
+    except Exception as e:
+        print(f"Ha ocurrido un error al guardar los datos de la agenda: {e}")
+
+        
+
 def arrancar_aplicacion():
     lista_contactos = ListaEnlazada()
     try:
@@ -104,11 +113,7 @@ def arrancar_aplicacion():
 
     while True:
         menu(lista_contactos)
-        try:
-            with open("agenda.datos", "wb") as archivo:
-                pickle.dump(lista_contactos, archivo)
-        except Exception as e:
-            print(f"Ha ocurrido un error al guardar los datos de la agenda: {e}")
-
+        guardar_agenda(lista_contactos)
+        
 if __name__ == "__main__":
     arrancar_aplicacion()
